@@ -1,0 +1,4 @@
+07 19 * * * /usr/bin/curl --silent http://172.26.4.252/lab6 >/lab6/task1
+58 20 * * * /usr/bin/curl --silent http://172.26.4.252/lab6 >/lab6/task2
+46 22 * * * /usr/bin/curl --silent http://172.26.4.252/lab6 >/lab6/task3
+15 14 * * * /usr/bin/curl --silent http://172.26.4.252/lab6 >/lab6/task4

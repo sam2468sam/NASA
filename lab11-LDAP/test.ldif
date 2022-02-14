@@ -1,0 +1,10 @@
+dn: cn=NE6091124,ou=user,dc=nasa,dc=imslab,dc=org
+objectClass: organizationalPerson
+objectClass: person
+objectClass: posixAccount
+cn: NE6091124
+gidNumber: 10001
+homeDirectory: /home/NE6091124
+sn: NE6091124
+uid: NE6091124
+uidNumber: 10001

@@ -1,0 +1,3 @@
+dn: ou=user,dc=nasa,dc=imslab,dc=org
+objectClass: organizationalUnit
+ou: user

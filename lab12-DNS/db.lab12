@@ -1,0 +1,23 @@
+;
+; BIND reverse data file for broadcast zone
+;
+$TTL	604800
+@			IN	SOA	localhost. dns.imslab.org. (
+				      1		; Serial
+				 604800		; Refresh
+				  86400		; Retry
+				2419200		; Expire
+				 604800 )	; Negative Cache TTL
+;
+@			IN	NS	localhost.
+@			IN	NS	dns.imslab.org.
+dns.imslab.org.		IN	A	127.0.1.1
+a			IN	A       127.0.1.1
+aaaa			IN      AAAA    2001:4860:4860::8888
+cname			IN	CNAME	a.dns.imslab.org.
+mail			IN	MX	10	smtp1.dns.imslab.org.
+mail			IN	MX	20	smtp2.dns.imslab.org.
+smtp1			IN	A	127.0.2.1
+smtp2			IN	A	127.0.2.2
+NE6091124		IN	A	172.26.4.49
+foo			IN	TXT	"bar"

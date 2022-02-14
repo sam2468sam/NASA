@@ -1,0 +1,24 @@
+version: '3.7'
+services:
+  nginx:
+    image: "nginx"
+    container_name: nginx
+    ports:
+      - "8080:80"
+    volumes: 
+      - "/var/www/lab7/index.php:/var/www/lab7/index.php"
+      - "/etc/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf"
+      - "/etc/nginx/nginx.conf:/etc/nginx/nginx.conf"
+      - "/var/run/php/:/var/run/php/"
+    restart: always
+    depends_on:
+      - php74
+  php74:
+    image: "php:7.4-fpm"
+    container_name: php74
+    ports:
+      - "9000:9000"
+    volumes:
+      - "/var/www/lab7/index.php:/var/www/lab7/index.php"
+      - "/var/run/php/:/var/run/php/"
+    restart: always
